@@ -26,12 +26,16 @@ def interpolate_Lagrange(X, F, Y):
 
     F_x = F(X)
 
+    L_part = np.array([
+        np.prod([(X[i] - X[j]) for j in range(X.size) if i != j]) for i in range(X.size)
+    ])
+
     def Lagrange(x):
         L_vec = np.array([
-            np.prod([(x - X[j]) / (X[i] - X[j]) for j in range(X.size) if j != i]) for i in range(X.size)
+            np.prod([(x - X[j]) for j in range(X.size) if j != i]) for i in range(X.size)
         ])
 
-        return np.sum(F_x*L_vec)
+        return np.sum(F_x * L_vec / L_part)
 
     return np.array([Lagrange(y_i) for y_i in Y])
 
@@ -43,7 +47,7 @@ if __name__ == "__main__":
 #    plt.show()
 
     X = np.linspace(-2, 0, 1000)
-    interpolated_X = np.linspace(-2, 0, 10)
+    interpolated_X = np.linspace(-2, 0, 80)
 
     fig, axd = plt.subplot_mosaic([["Func1", "Func2"],
                                    ["IFunc1", "IFunc2"],
