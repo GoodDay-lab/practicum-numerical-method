@@ -46,8 +46,9 @@ if __name__ == "__main__":
 #
 #    plt.show()
 
+    p = 16
     X = np.linspace(-2, 0, 1000)
-    interpolated_X = np.linspace(-2, 0, 80)
+    interpolated_X = np.linspace(-2, 0, p)
 
     fig, axd = plt.subplot_mosaic([["Func1", "Func2"],
                                    ["IFunc1", "IFunc2"],
@@ -61,7 +62,9 @@ if __name__ == "__main__":
     IF1_Y = interpolate_Lagrange(interpolated_X, Function1, X)
     IF2_Y = interpolate_Lagrange(interpolated_X, Function2, X)
     axd["IFunc1"].plot(X, IF1_Y, color="red")
+    axd["IFunc1"].set_xlabel("n = %d" % p)
     axd["IFunc2"].plot(X, IF2_Y, color="blue")
+    axd["IFunc2"].set_xlabel("n = %d" % p)
 
     axd["Func1Err"].plot(X, np.abs(IF1_Y - Function1(X)), color="red")
     axd["Func2Err"].plot(X, np.abs(IF2_Y - Function2(X)), color="blue")
