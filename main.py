@@ -26,18 +26,20 @@ def interpolate_Lagrange(X, F, Y):
 
     F_x = F(X)
 
-    L_part = np.array([
-        np.prod([(X[i] - X[j]) for j in range(X.size) if i != j]) for i in range(X.size)
-    ])
+    L_part = F_x / np.fromfunction(
+        np.vectorize(lambda i: np.prod(X[int(i)] - X, where=np.fromfunction(lambda j: j != i, (X.size,)))),
+        (X.size,)
+    )
 
     def Lagrange(x):
-        L_vec = np.array([
-            np.prod([(x - X[j]) for j in range(X.size) if j != i]) for i in range(X.size)
-        ])
+        L_vec = np.fromfunction(
+            np.vectorize(lambda i: np.prod((x - X), where=np.fromfunction(lambda j: j != i, (X.size,)))),
+            (X.size,)
+        )
 
-        return np.sum(F_x * L_vec / L_part)
+        return np.sum(L_part * L_vec)
 
-    return np.array([Lagrange(y_i) for y_i in Y])
+    return np.fromfunction(np.vectorize(lambda i: Lagrange(Y[int(i)])), (Y.size,))
 
 
 if __name__ == "__main__":
