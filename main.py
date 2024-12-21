@@ -80,6 +80,8 @@ if __name__ == "__main__":
 
     IF1_Y = interpolate_Lagrange(interpolated_X, Function1, X)
     IF2_Y = interpolate_Lagrange(interpolated_X, Function2, X)
+
+    # При интерполяции сплйнами p mod m = 0, где p - разбиение множества, а m - порядок сплайна
     IF3_Y = interpolate_Splain(interpolated_X, Function1, X)
     IF4_Y = interpolate_Splain(interpolated_X, Function2, X)
 
