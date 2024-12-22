@@ -112,7 +112,7 @@ if __name__ == "__main__":
     """
             Приближение многочленами Лагранжа
     """
-    params = [3, 5, 9, 17]
+    params = [60]
     test_X = np.linspace(-2, 0, 1000)
     test_Y1 = Function1(test_X)
     test_Y2 = Function2(test_X)
