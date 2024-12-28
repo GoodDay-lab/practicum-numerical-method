@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.12.22)  28 DEC 2024 07:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.12.22)  28 DEC 2024 07:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -562,13 +562,7 @@ Overfull \hbox (46.44357pt too wide) in paragraph at lines 94--95
  []
 
 [2]
-Overfull \hbox (38.19034pt too wide) in paragraph at lines 121--122
-[]\T2A/cmr/m/n/10 Сплайн является гладкой функцией, поэтому наложим некоторые о
-граничения
- []
-
-
-Overfull \hbox (21.52399pt too wide) in paragraph at lines 123--124
+Overfull \hbox (21.52399pt too wide) in paragraph at lines 121--122
 []\T2A/cmr/m/n/10 Пусть $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\
 OT1/cmr/m/n/10 )$ \T2A/cmr/m/n/10 является сплайном, а $\OML/cmm/m/it/10 f[]\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$ \T2A/cmr/m/n/10 элементарным
@@ -579,15 +573,15 @@ m/n/10 ) =
 <F1_p5p7_Lagrange.png, id=23, 346.896pt x 260.172pt>
 File: F1_p5p7_Lagrange.png Graphic file (type png)
 <use F1_p5p7_Lagrange.png>
-Package pdftex.def Info: F1_p5p7_Lagrange.png  used on input line 158.
+Package pdftex.def Info: F1_p5p7_Lagrange.png  used on input line 156.
 (pdftex.def)             Requested size: 346.89514pt x 260.17134pt.
 
-Overfull \hbox (1.89514pt too wide) in paragraph at lines 158--161
+Overfull \hbox (1.89514pt too wide) in paragraph at lines 156--159
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--161
+Underfull \hbox (badness 10000) in paragraph at lines 156--159
  \T2A/cmr/m/n/10 [Рис. 1] Интерполяция функции (1)  
  []
 
@@ -595,15 +589,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--161
 <F1_p11p17_Lagrange.png, id=28, 346.896pt x 260.172pt>
 File: F1_p11p17_Lagrange.png Graphic file (type png)
 <use F1_p11p17_Lagrange.png>
-Package pdftex.def Info: F1_p11p17_Lagrange.png  used on input line 162.
+Package pdftex.def Info: F1_p11p17_Lagrange.png  used on input line 160.
 (pdftex.def)             Requested size: 346.89514pt x 260.17134pt.
 
-Overfull \hbox (1.89514pt too wide) in paragraph at lines 162--165
+Overfull \hbox (1.89514pt too wide) in paragraph at lines 160--163
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--165
+Underfull \hbox (badness 10000) in paragraph at lines 160--163
  \T2A/cmr/m/n/10 [Рис. 2] Интерполяция функции (1)  
  []
 
@@ -611,30 +605,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--165
 <F2_p5p7_Lagrange.png, id=33, 346.896pt x 260.172pt>
 File: F2_p5p7_Lagrange.png Graphic file (type png)
 <use F2_p5p7_Lagrange.png>
-Package pdftex.def Info: F2_p5p7_Lagrange.png  used on input line 166.
+Package pdftex.def Info: F2_p5p7_Lagrange.png  used on input line 164.
 (pdftex.def)             Requested size: 346.89514pt x 260.17134pt.
 
-Overfull \hbox (1.89514pt too wide) in paragraph at lines 166--168
+Overfull \hbox (1.89514pt too wide) in paragraph at lines 164--166
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--168
+Underfull \hbox (badness 10000) in paragraph at lines 164--166
  \T2A/cmr/m/n/10 [Рис. 3] Интерполяция функции (2) 
  []
 
 <F2_p11p17_Lagrange.png, id=34, 346.896pt x 260.172pt>
 File: F2_p11p17_Lagrange.png Graphic file (type png)
 <use F2_p11p17_Lagrange.png>
-Package pdftex.def Info: F2_p11p17_Lagrange.png  used on input line 169.
+Package pdftex.def Info: F2_p11p17_Lagrange.png  used on input line 167.
 (pdftex.def)             Requested size: 346.89514pt x 260.17134pt.
 
-Overfull \hbox (1.89514pt too wide) in paragraph at lines 169--171
+Overfull \hbox (1.89514pt too wide) in paragraph at lines 167--169
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--171
+Underfull \hbox (badness 10000) in paragraph at lines 167--169
  \T2A/cmr/m/n/10 [Рис. 4] Интерполяция функции (2) 
  []
 
@@ -642,15 +636,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--171
 <F1_p5p7_Splain.png, id=40, 346.896pt x 260.172pt>
 File: F1_p5p7_Splain.png Graphic file (type png)
 <use F1_p5p7_Splain.png>
-Package pdftex.def Info: F1_p5p7_Splain.png  used on input line 188.
+Package pdftex.def Info: F1_p5p7_Splain.png  used on input line 186.
 (pdftex.def)             Requested size: 346.89514pt x 260.17134pt.
 
-Overfull \hbox (1.89514pt too wide) in paragraph at lines 188--190
+Overfull \hbox (1.89514pt too wide) in paragraph at lines 186--188
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--190
+Underfull \hbox (badness 10000) in paragraph at lines 186--188
  \T2A/cmr/m/n/10 [Рис. 5] Интерполяция функции (1) 
  []
 
@@ -658,15 +652,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 188--190
 <F1_p11p17_Splain.png, id=45, 346.896pt x 260.172pt>
 File: F1_p11p17_Splain.png Graphic file (type png)
 <use F1_p11p17_Splain.png>
-Package pdftex.def Info: F1_p11p17_Splain.png  used on input line 191.
+Package pdftex.def Info: F1_p11p17_Splain.png  used on input line 189.
 (pdftex.def)             Requested size: 346.89514pt x 260.17134pt.
 
-Overfull \hbox (1.89514pt too wide) in paragraph at lines 191--193
+Overfull \hbox (1.89514pt too wide) in paragraph at lines 189--191
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--193
+Underfull \hbox (badness 10000) in paragraph at lines 189--191
  \T2A/cmr/m/n/10 [Рис. 6] Интерполяция функции (1) 
  []
 
@@ -674,72 +668,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 191--193
 <F2_p5p7_Splain.png, id=51, 346.896pt x 260.172pt>
 File: F2_p5p7_Splain.png Graphic file (type png)
 <use F2_p5p7_Splain.png>
-Package pdftex.def Info: F2_p5p7_Splain.png  used on input line 194.
+Package pdftex.def Info: F2_p5p7_Splain.png  used on input line 192.
 (pdftex.def)             Requested size: 346.89514pt x 260.17134pt.
 
-Overfull \hbox (1.89514pt too wide) in paragraph at lines 194--196
+Overfull \hbox (1.89514pt too wide) in paragraph at lines 192--194
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--196
+Underfull \hbox (badness 10000) in paragraph at lines 192--194
  \T2A/cmr/m/n/10 [Рис. 7] Интерполяция функции (2) 
  []
 
 <F2_p11p17_Splain.png, id=52, 346.896pt x 260.172pt>
 File: F2_p11p17_Splain.png Graphic file (type png)
 <use F2_p11p17_Splain.png>
-Package pdftex.def Info: F2_p11p17_Splain.png  used on input line 197.
+Package pdftex.def Info: F2_p11p17_Splain.png  used on input line 195.
 (pdftex.def)             Requested size: 346.89514pt x 260.17134pt.
 
-Overfull \hbox (1.89514pt too wide) in paragraph at lines 197--199
+Overfull \hbox (1.89514pt too wide) in paragraph at lines 195--197
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--199
+Underfull \hbox (badness 10000) in paragraph at lines 195--197
  \T2A/cmr/m/n/10 [Рис. 8] Интерполяция функции (2) 
  []
 
 [8 <./F1_p11p17_Splain.png> <./F2_p5p7_Splain.png>]
-Overfull \hbox (7.69165pt too wide) in paragraph at lines 220--223
+Overfull \hbox (7.69165pt too wide) in paragraph at lines 218--221
 \T2A/cmr/m/n/10 Метод интерполяции многочленами Лагранжа позволяет хорошо прибл
 ижать
  []
 
 [9 <./F2_p11p17_Splain.png>]
-Overfull \hbox (28.66241pt too wide) in paragraph at lines 224--225
+Overfull \hbox (28.66241pt too wide) in paragraph at lines 222--223
 []\T2A/cmr/m/n/10 Метод интерполяции сплайнами показывает себя лучше в задаче и
 нтерполяции
  []
 
 
-Overfull \hbox (4.51553pt too wide) in paragraph at lines 229--231
+Overfull \hbox (4.51553pt too wide) in paragraph at lines 227--229
 []\T2A/cmr/m/n/10 Код хранится в репозитории: https://github.com/GoodDay-lab/pr
 acticum-
  []
 
 
-Overfull \hbox (16.93939pt too wide) in paragraph at lines 233--234
+Overfull \hbox (16.93939pt too wide) in paragraph at lines 231--232
 \T2A/cmr/m/n/10 Таким образом, в ходе выполнения задания был реализован метод п
 риближения
  []
 
 
-Overfull \hbox (10.51505pt too wide) in paragraph at lines 233--234
+Overfull \hbox (10.51505pt too wide) in paragraph at lines 231--232
 \T2A/cmr/m/n/10 полиномами Лагранжа и сплайнами. Было отмечено и теоретически д
 оказано,
  []
 
 
-Overfull \hbox (11.55867pt too wide) in paragraph at lines 233--234
+Overfull \hbox (11.55867pt too wide) in paragraph at lines 231--232
 \T2A/cmr/m/n/10 что полиномы Лагранжа могут эффективно приближать функции $\OML
 /cmm/m/it/10 f \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 [\OML/cmm
 /m/it/10 a; b\OT1/cmr/m/n/10 ]$\T2A/cmr/m/n/10 ,
  []
 
 
-Overfull \hbox (33.71921pt too wide) in paragraph at lines 239--240
+Overfull \hbox (33.71921pt too wide) in paragraph at lines 237--238
 []\T2A/cmr/m/n/10 (url: https://education.yandex.ru/handbook/ml/article/mashinn
 oye-obucheniye) 
  []
@@ -748,7 +742,7 @@ oye-obucheniye)
 Here is how much of TeX's memory you used:
  4909 strings out of 477459
  80905 string characters out of 5830925
- 1863388 words of memory out of 6000000
+ 1862388 words of memory out of 6000000
  25042 multiletter control sequences out of 15000+600000
  522689 words of font info for 54 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
@@ -767,7 +761,7 @@ ic/cm-super/sfrm1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-s
 uper/sfrm1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sf
 rm1728.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfti1000.
 pfb>
-Output written on report.pdf (10 pages, 574338 bytes).
+Output written on report.pdf (10 pages, 574311 bytes).
 PDF statistics:
  125 PDF objects out of 1000 (max. 8388607)
  68 compressed objects within 1 object stream
