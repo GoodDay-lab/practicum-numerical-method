@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.12.22)  28 DEC 2024 07:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.12.22)  28 DEC 2024 07:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -696,44 +696,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--197
  []
 
 [8 <./F1_p11p17_Splain.png> <./F2_p5p7_Splain.png>]
-Overfull \hbox (7.69165pt too wide) in paragraph at lines 218--221
+Overfull \hbox (1.57pt too wide) in paragraph at lines 215--218
+\T2A/cmr/m/n/10 представлены интерполянты $\OML/cmm/m/it/10 F[]\OT1/cmr/m/n/10 
+(\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$\T2A/cmr/m/n/10 . В 3 строке представлена 
+функция $\OML/cmm/m/it/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )
+ =
+ []
+
+
+Overfull \hbox (7.69165pt too wide) in paragraph at lines 222--225
 \T2A/cmr/m/n/10 Метод интерполяции многочленами Лагранжа позволяет хорошо прибл
 ижать
  []
 
 [9 <./F2_p11p17_Splain.png>]
-Overfull \hbox (28.66241pt too wide) in paragraph at lines 222--223
+Overfull \hbox (28.66241pt too wide) in paragraph at lines 226--227
 []\T2A/cmr/m/n/10 Метод интерполяции сплайнами показывает себя лучше в задаче и
 нтерполяции
  []
 
 
-Overfull \hbox (4.51553pt too wide) in paragraph at lines 227--229
+Overfull \hbox (4.51553pt too wide) in paragraph at lines 231--233
 []\T2A/cmr/m/n/10 Код хранится в репозитории: https://github.com/GoodDay-lab/pr
 acticum-
  []
 
 
-Overfull \hbox (16.93939pt too wide) in paragraph at lines 231--232
+Overfull \hbox (16.93939pt too wide) in paragraph at lines 235--236
 \T2A/cmr/m/n/10 Таким образом, в ходе выполнения задания был реализован метод п
 риближения
  []
 
 
-Overfull \hbox (10.51505pt too wide) in paragraph at lines 231--232
+Overfull \hbox (10.51505pt too wide) in paragraph at lines 235--236
 \T2A/cmr/m/n/10 полиномами Лагранжа и сплайнами. Было отмечено и теоретически д
 оказано,
  []
 
 
-Overfull \hbox (11.55867pt too wide) in paragraph at lines 231--232
+Overfull \hbox (11.55867pt too wide) in paragraph at lines 235--236
 \T2A/cmr/m/n/10 что полиномы Лагранжа могут эффективно приближать функции $\OML
 /cmm/m/it/10 f \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 [\OML/cmm
 /m/it/10 a; b\OT1/cmr/m/n/10 ]$\T2A/cmr/m/n/10 ,
  []
 
 
-Overfull \hbox (33.71921pt too wide) in paragraph at lines 237--238
+Overfull \hbox (33.71921pt too wide) in paragraph at lines 241--242
 []\T2A/cmr/m/n/10 (url: https://education.yandex.ru/handbook/ml/article/mashinn
 oye-obucheniye) 
  []
@@ -761,7 +769,7 @@ ic/cm-super/sfrm1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-s
 uper/sfrm1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sf
 rm1728.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfti1000.
 pfb>
-Output written on report.pdf (10 pages, 574311 bytes).
+Output written on report.pdf (10 pages, 574852 bytes).
 PDF statistics:
  125 PDF objects out of 1000 (max. 8388607)
  68 compressed objects within 1 object stream
