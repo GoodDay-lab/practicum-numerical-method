@@ -11,6 +11,7 @@ def Function1(x):
             return x
         return 2*x*Chebyshov(x, n-1) - Chebyshov(x, n-2)
 
+    #return np.sin(4*x)
     return Chebyshov(x, 5)
 
 def Function2(x):
@@ -41,18 +42,72 @@ def interpolate_Lagrange(train_X, train_Y, test_X):
 
 
 def interpolate_Splain(train_X, train_Y, test_X):
-    result = np.zeros(test_X.shape)
-    m = 3
+    retval = np.zeros((test_X.size,))
 
-    def create_Splain(train_x, train_y):
-        ret = interpolate_Lagrange(train_x, train_y, test_X)
-        for i, v in enumerate(test_X):
-            if (train_x[0] <= v and v <= train_x[-1]):
-                result[i] = ret[i]
+    _h = np.fromfunction(np.vectorize(lambda i: train_X[int(i+1)] - train_X[int(i)]), (train_X.size - 1,))
+    _F = 3 * np.fromfunction(np.vectorize(lambda i: (train_Y[int(i+2)] - train_Y[int(i+1)])/_h[int(i+1)] - \
+                             (train_Y[int(i+1)] - train_Y[int(i)])/_h[int(i)]), (train_Y.size - 2,))
+    _A = np.fromfunction(np.vectorize(lambda i: _h[int(i+1)]), (_h.size-1,))
+    _B = np.fromfunction(np.vectorize(lambda i: _h[int(i+1)]), (_h.size-1,))
+    _C = 2 * np.fromfunction(np.vectorize(lambda i: _h[int(i)] + _h[int(i+1)]), (_h.size-1,))
 
-    for i in range(train_X.size // m):
-        create_Splain(train_X[m*i : m*(i+1) + 1], train_Y[m*i : m*(i+1) + 1])
-    return result
+    """ Метод прогонки """
+
+    solution = np.zeros((train_X.size-2,));
+    alph_s, beta_s = np.zeros((train_X.size-2,)), np.zeros((train_X.size-2,))
+    alph_s[0], beta_s[0] = -_B[0]/_C[0], _F[0]/_C[0]
+
+    for i in range(1, solution.size):
+        alph_s[i] = -_B[i] / (_A[i-1]*alph_s[i-1] + _C[i])
+        beta_s[i] = (_F[i] - _A[i-1]*beta_s[i-1]) / (_A[i-1]*alph_s[i-1] + _C[i])
+
+    solution[solution.size-1] = (_F[solution.size-1] - _A[solution.size-1]*beta_s[solution.size-1]) /\
+        (_A[solution.size-1]*alph_s[solution.size-1] + _C[solution.size-1])
+
+    for i in range(solution.size - 2, -1, -1):
+        solution[i] = alph_s[i] * solution[i+1] + beta_s[i]
+    solution = np.insert(solution, 0, 0)
+    solution = np.insert(solution, solution.size, 0)
+
+    """ Последовательное вычисление коэффицентов полиномов """
+
+    j = 0
+    for i in range(1, train_X.size):
+        x_i, x_ii = train_X[i-1], train_X[i]
+        a_i = train_Y[i-1]
+        b_i = (train_Y[i] - train_Y[i-1]) / _h[i-1] -\
+            (2 * solution[i-1] + solution[i]) * _h[i-1] / 3
+        c_i = solution[i-1]
+        d_i = (solution[i] - solution[i-1]) / (3 * _h[i-1])
+
+        function = lambda x, a, b, c, d, x0: (
+            a + b*(x - x0) + c*(x - x0)**2 + d*(x - x0)**3
+        )
+
+        while (test_X[j] <= x_ii):
+            retval[j] = function(test_X[j], a_i, b_i, c_i, d_i, x_i)
+            j += 1
+
+            if (j == test_X.size):
+                break
+
+    return retval
+
+
+def interpolate_Linear(train_X, train_Y, test_X):
+    retval = np.zeros((test_X.size,))
+
+    j = 0
+    for i in range(1, train_X.size):
+        x_i, x_ii = train_X[i-1], train_X[i]
+
+        while test_X[j] <= x_ii:
+            retval[j] = (test_X[j] - x_i) * (train_Y[i] - train_Y[i-1]) / (x_ii - x_i) + train_Y[i-1]
+            j += 1
+
+            if j == test_X.size:
+                break
+    return retval
 
 
 if __name__ == "__main__":
@@ -112,6 +167,7 @@ if __name__ == "__main__":
     """
             Приближение многочленами Лагранжа
     """
+    """
     params = [60]
     test_X = np.linspace(-2, 0, 1000)
     test_Y1 = Function1(test_X)
@@ -149,42 +205,49 @@ if __name__ == "__main__":
         axd2["F_err;param=%d" % param].set_xlabel("metric = %f" % max(err2))
 
     """
-    params = [12, 24, 36]
-    test_X = np.linspace(-2, 0, 1001)
-    test_Y1 = Function1(test_X)
-    test_Y2 = Function2(test_X)
 
-    fig1, axd1 = plt.subplot_mosaic([["F_orig;param=%d" % p for p in params],
+    def build_plot(params):
+        #params = [11, 17]
+        test_X = np.linspace(-2, 0, 1001)
+        test_Y1 = Function1(test_X)
+        test_Y2 = Function2(test_X)
+
+        fig1, axd1 = plt.subplot_mosaic([["F_orig;param=%d" % p for p in params],
                                    ["F_inter;param=%d" % p for p in params],
                                    ["F_err;param=%d" % p for p in params]], layout="constrained")
 
-    fig2, axd2 = plt.subplot_mosaic([["F_orig;param=%d" % p for p in params],
+        fig2, axd2 = plt.subplot_mosaic([["F_orig;param=%d" % p for p in params],
                                    ["F_inter;param=%d" % p for p in params],
                                    ["F_err;param=%d" % p for p in params]], layout="constrained")
 
-    for param in params:
-        train_X = np.linspace(-2, 0, param)
-        train_Y1 = Function1(train_X)
-        train_Y2 = Function2(train_X)
+        for param in params:
+            train_X = np.linspace(-2, 0, param)
+            train_Y1 = Function1(train_X)
+            train_Y2 = Function2(train_X)
 
-        pred_Y1 = interpolate_Splain(train_X, train_Y1, test_X)
-        pred_Y2 = interpolate_Splain(train_X, train_Y2, test_X)
+            pred_Y1 = interpolate_Splain(train_X, train_Y1, test_X)
+            pred_Y2 = interpolate_Splain(train_X, train_Y2, test_X)
 
-        err1 = np.abs(test_Y1 - pred_Y1)
-        err2 = np.abs(test_Y2 - pred_Y2)
+            err1 = np.abs(test_Y1 - pred_Y1)
+            err2 = np.abs(test_Y2 - pred_Y2)
 
-        axd1["F_orig;param=%d" % param].plot(test_X, test_Y1, color="red")
-        axd1["F_inter;param=%d" % param].plot(test_X, pred_Y1, color="red")
-        axd1["F_inter;param=%d" % param].set_xlabel("param = %d" % param)
-        axd1["F_err;param=%d" % param].plot(test_X, err1, color="red")
-        axd1["F_err;param=%d" % param].set_xlabel("metric = %f" % max(err1))
+            axd1["F_orig;param=%d" % param].plot(test_X, test_Y1, color="red")
+            axd1["F_inter;param=%d" % param].plot(test_X, pred_Y1, color="red")
+            axd1["F_inter;param=%d" % param].set_xlabel("param = %d" % param)
+            axd1["F_err;param=%d" % param].plot(test_X, err1, color="red")
+            axd1["F_err;param=%d" % param].set_xlabel("metric = %f" % max(err1))
 
-        axd2["F_orig;param=%d" % param].plot(test_X, test_Y2, color="blue")
-        axd2["F_inter;param=%d" % param].plot(test_X, pred_Y2, color="blue")
-        axd2["F_inter;param=%d" % param].set_xlabel("param = %d" % param)
-        axd2["F_err;param=%d" % param].plot(test_X, err2, color="blue")
-        axd2["F_err;param=%d" % param].set_xlabel("metric = %f" % max(err2))
-    """
+            axd2["F_orig;param=%d" % param].plot(test_X, test_Y2, color="blue")
+            axd2["F_inter;param=%d" % param].plot(test_X, pred_Y2, color="blue")
+            axd2["F_inter;param=%d" % param].set_xlabel("param = %d" % param)
+            axd2["F_err;param=%d" % param].plot(test_X, err2, color="blue")
+            axd2["F_err;param=%d" % param].set_xlabel("metric = %f" % max(err2))
 
-    plt.show()
+        fig1.set_size_inches(4.8, 3.6)
+        fig2.set_size_inches(4.8, 3.6)
+        fig1.savefig("F1_p%dp%d_Splain.png" % (params[0], params[1]), dpi=200)
+        fig2.savefig("F2_p%dp%d_Splain.png" % (params[0], params[1]), dpi=200)
+        #plt.show()
+
+    build_plot([5, 7])
 
