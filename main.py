@@ -11,7 +11,7 @@ def Function1(x):
             return x
         return 2*x*Chebyshov(x, n-1) - Chebyshov(x, n-2)
 
-    #return np.sin(4*x)
+    #return np.sin(6*x)
     return Chebyshov(x, 5)
 
 def Function2(x):
@@ -61,21 +61,20 @@ def interpolate_Splain(train_X, train_Y, test_X):
         alph_s[i] = -_B[i] / (_A[i-1]*alph_s[i-1] + _C[i])
         beta_s[i] = (_F[i] - _A[i-1]*beta_s[i-1]) / (_A[i-1]*alph_s[i-1] + _C[i])
 
-    solution[solution.size-1] = (_F[solution.size-1] - _A[solution.size-1]*beta_s[solution.size-1]) /\
-        (_A[solution.size-1]*alph_s[solution.size-1] + _C[solution.size-1])
-
-    for i in range(solution.size - 2, -1, -1):
-        solution[i] = alph_s[i] * solution[i+1] + beta_s[i]
     solution = np.insert(solution, 0, 0)
-    solution = np.insert(solution, solution.size, 0)
+    solution = np.insert(solution, 0, 0)
+
+    for i in range(solution.size - 2, 0, -1):
+        solution[i] = alph_s[i-1] * solution[i+1] + beta_s[i-1]
 
     """ Последовательное вычисление коэффицентов полиномов """
 
     j = 0
     for i in range(1, train_X.size):
         x_i, x_ii = train_X[i-1], train_X[i]
-        a_i = train_Y[i-1]
-        b_i = (train_Y[i] - train_Y[i-1]) / _h[i-1] -\
+        y_i, y_ii = train_Y[i-1], train_Y[i]
+        a_i = y_i
+        b_i = (y_ii - y_i) / _h[i-1] -\
             (2 * solution[i-1] + solution[i]) * _h[i-1] / 3
         c_i = solution[i-1]
         d_i = (solution[i] - solution[i-1]) / (3 * _h[i-1])
@@ -247,7 +246,7 @@ if __name__ == "__main__":
         fig2.set_size_inches(4.8, 3.6)
         fig1.savefig("F1_p%dp%d_Splain.png" % (params[0], params[1]), dpi=200)
         fig2.savefig("F2_p%dp%d_Splain.png" % (params[0], params[1]), dpi=200)
-        #plt.show()
+        plt.show()
 
-    build_plot([5, 7])
+    build_plot([33, 65])
 

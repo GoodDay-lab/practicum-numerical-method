@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.12.22)  28 DEC 2024 07:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.12.22)  29 DEC 2024 22:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -495,36 +495,30 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Overfull \hbox (1.80786pt too wide) in paragraph at lines 27--28
-[]\T2A/cmr/m/n/10 Интерполяция использует значения некоторой функции, заданные 
-в ряде
- []
-
-
-Overfull \hbox (39.90967pt too wide) in paragraph at lines 29--31
+Overfull \hbox (39.90967pt too wide) in paragraph at lines 29--30
 []\T2A/cmr/m/n/10 Многие задачи машинного обучения можно сформулировать через и
 нтерполяцию
  []
 
 
-Overfull \hbox (19.7757pt too wide) in paragraph at lines 32--33
+Overfull \hbox (19.7757pt too wide) in paragraph at lines 31--32
 []\T2A/cmr/m/n/10 Различные методы численного приближения и их теоретические об
 основания
  []
 
 
-Overfull \hbox (10.18994pt too wide) in paragraph at lines 46--47
+Overfull \hbox (10.18994pt too wide) in paragraph at lines 45--46
 \T2A/cmr/m/n/10 В решении были использованы методы приближения многочленами Лаг
 ранжа
  []
 
 
-Overfull \hbox (20.36229pt too wide) in paragraph at lines 51--52
+Overfull \hbox (20.36229pt too wide) in paragraph at lines 50--51
 []\T2A/cmr/m/n/10 В [3] представлено теоретическое
  []
 
 
-Overfull \hbox (21.19449pt too wide) in paragraph at lines 51--52
+Overfull \hbox (21.19449pt too wide) in paragraph at lines 50--51
 \T2A/cmr/m/n/10 обоснование данного метода, в частности, доказана теорема о при
 ближении
  []
@@ -533,55 +527,89 @@ Overfull \hbox (21.19449pt too wide) in paragraph at lines 51--52
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-di
 st/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
-Overfull \hbox (1.58817pt too wide) in paragraph at lines 67--68
-\T2A/cmr/m/n/10 потому что иначе функция может и вовсе не приближаться полиномо
-м. 
+Overfull \hbox (5.78159pt too wide) in paragraph at lines 66--67
+[]\T2A/cmr/m/n/10 Как будет видно, требование, чтобы функция была дифференцируе
+мой,
  []
 
 
-Overfull \hbox (45.04971pt too wide) in paragraph at lines 83--84
-[]\T2A/cmr/m/n/10 А многочлены $\OML/cmm/m/it/10 l[]\OT1/cmr/m/n/10 (\OML/cmm/m
-/it/10 x\OT1/cmr/m/n/10 )$ \T2A/cmr/m/n/10 задаются единственным образом и явля
-ются элементарными
+Overfull \hbox (9.44736pt too wide) in paragraph at lines 66--67
+\T2A/cmr/m/n/10 здесь существенно, потому что иначе она может и вовсе не прибли
+жаться
  []
 
 
-Overfull \hbox (4.31065pt too wide) in paragraph at lines 92--93
+Overfull \hbox (27.91507pt too wide) in paragraph at lines 82--83
+\T2A/cmr/m/n/10 системы линейных алгебраических уравнений определјнного вида, и
+меющих
+ []
+
+
+Overfull \hbox (0.61618pt too wide) in paragraph at lines 82--83
+\T2A/cmr/m/n/10 невырожденную матрицу коэффициентов) и являются элементарными
+ []
+
+
+Overfull \hbox (4.31065pt too wide) in paragraph at lines 91--92
 []\T2A/cmr/m/n/10 В [3] также представлен метод
  []
 
 
-Overfull \hbox (0.80133pt too wide) in paragraph at lines 92--93
+Overfull \hbox (0.80133pt too wide) in paragraph at lines 91--92
 \T2A/cmr/m/n/10 приближение сплайнами. Сплайн представляет собой гладкий кусочн
 о
  []
 
 
-Overfull \hbox (46.44357pt too wide) in paragraph at lines 94--95
+Overfull \hbox (46.44357pt too wide) in paragraph at lines 93--94
 []\T2A/cmr/m/it/10 Кубический сплайн, обладающий
  []
 
 [2]
-Overfull \hbox (21.52399pt too wide) in paragraph at lines 121--122
+Overfull \hbox (27.22786pt too wide) in paragraph at lines 118--119
 []\T2A/cmr/m/n/10 Пусть $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\
 OT1/cmr/m/n/10 )$ \T2A/cmr/m/n/10 является сплайном, а $\OML/cmm/m/it/10 f[]\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$ \T2A/cmr/m/n/10 элементарным
- полиномом $\OML/cmm/m/it/10 degf[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/
-m/n/10 ) =
+ полиномом ($[] \OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr
+/m/n/10 ) =
+ []
+
+
+Overfull \hbox (21.81482pt too wide) detected at line 140
+[]
+ []
+
+
+Overfull \hbox (10.82208pt too wide) in paragraph at lines 142--143
+[]\T2A/cmr/m/n/10 Мы имеем систему (15) из $\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10
+ ^^@ \OT1/cmr/m/n/10 1$ \T2A/cmr/m/n/10 уравнений относительно $\OML/cmm/m/it/1
+0 n \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1$ \T2A/cmr/m/n/10 неизвестных
+ []
+
+
+Overfull \hbox (35.41324pt too wide) in paragraph at lines 142--143
+\T2A/cmr/m/n/10 систему можно решить методом прогонки, поскольку матрица коэффи
+циентов
+ []
+
+
+Overfull \hbox (19.68561pt too wide) in paragraph at lines 142--143
+\T2A/cmr/m/n/10 системы (15) является имеет специальный вид. Этот метод был реа
+лизован
  []
 
 <F1_p5p7_Lagrange.png, id=23, 346.896pt x 260.172pt>
 File: F1_p5p7_Lagrange.png Graphic file (type png)
 <use F1_p5p7_Lagrange.png>
-Package pdftex.def Info: F1_p5p7_Lagrange.png  used on input line 156.
+Package pdftex.def Info: F1_p5p7_Lagrange.png  used on input line 150.
 (pdftex.def)             Requested size: 346.89514pt x 260.17134pt.
 
-Overfull \hbox (1.89514pt too wide) in paragraph at lines 156--159
+Overfull \hbox (1.89514pt too wide) in paragraph at lines 150--153
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--159
+Underfull \hbox (badness 10000) in paragraph at lines 150--153
  \T2A/cmr/m/n/10 [Рис. 1] Интерполяция функции (1)  
  []
 
@@ -589,15 +617,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--159
 <F1_p11p17_Lagrange.png, id=28, 346.896pt x 260.172pt>
 File: F1_p11p17_Lagrange.png Graphic file (type png)
 <use F1_p11p17_Lagrange.png>
-Package pdftex.def Info: F1_p11p17_Lagrange.png  used on input line 160.
+Package pdftex.def Info: F1_p11p17_Lagrange.png  used on input line 154.
 (pdftex.def)             Requested size: 346.89514pt x 260.17134pt.
 
-Overfull \hbox (1.89514pt too wide) in paragraph at lines 160--163
+Overfull \hbox (1.89514pt too wide) in paragraph at lines 154--157
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--163
+Underfull \hbox (badness 10000) in paragraph at lines 154--157
  \T2A/cmr/m/n/10 [Рис. 2] Интерполяция функции (1)  
  []
 
@@ -605,30 +633,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--163
 <F2_p5p7_Lagrange.png, id=33, 346.896pt x 260.172pt>
 File: F2_p5p7_Lagrange.png Graphic file (type png)
 <use F2_p5p7_Lagrange.png>
-Package pdftex.def Info: F2_p5p7_Lagrange.png  used on input line 164.
+Package pdftex.def Info: F2_p5p7_Lagrange.png  used on input line 158.
 (pdftex.def)             Requested size: 346.89514pt x 260.17134pt.
 
-Overfull \hbox (1.89514pt too wide) in paragraph at lines 164--166
+Overfull \hbox (1.89514pt too wide) in paragraph at lines 158--160
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--166
+Underfull \hbox (badness 10000) in paragraph at lines 158--160
  \T2A/cmr/m/n/10 [Рис. 3] Интерполяция функции (2) 
  []
 
 <F2_p11p17_Lagrange.png, id=34, 346.896pt x 260.172pt>
 File: F2_p11p17_Lagrange.png Graphic file (type png)
 <use F2_p11p17_Lagrange.png>
-Package pdftex.def Info: F2_p11p17_Lagrange.png  used on input line 167.
+Package pdftex.def Info: F2_p11p17_Lagrange.png  used on input line 161.
 (pdftex.def)             Requested size: 346.89514pt x 260.17134pt.
 
-Overfull \hbox (1.89514pt too wide) in paragraph at lines 167--169
+Overfull \hbox (1.89514pt too wide) in paragraph at lines 161--163
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--169
+Underfull \hbox (badness 10000) in paragraph at lines 161--163
  \T2A/cmr/m/n/10 [Рис. 4] Интерполяция функции (2) 
  []
 
@@ -636,7 +664,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--169
 <F1_p5p7_Splain.png, id=40, 346.896pt x 260.172pt>
 File: F1_p5p7_Splain.png Graphic file (type png)
 <use F1_p5p7_Splain.png>
-Package pdftex.def Info: F1_p5p7_Splain.png  used on input line 186.
+Package pdftex.def Info: F1_p5p7_Splain.png  used on input line 180.
+(pdftex.def)             Requested size: 346.89514pt x 260.17134pt.
+
+Overfull \hbox (1.89514pt too wide) in paragraph at lines 180--182
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
+ \T2A/cmr/m/n/10 [Рис. 5] Интерполяция функции (1) 
+ []
+
+[6 <./F2_p11p17_Lagrange.png>]
+<F1_p11p17_Splain.png, id=45, 346.896pt x 260.172pt>
+File: F1_p11p17_Splain.png Graphic file (type png)
+<use F1_p11p17_Splain.png>
+Package pdftex.def Info: F1_p11p17_Splain.png  used on input line 183.
+(pdftex.def)             Requested size: 346.89514pt x 260.17134pt.
+
+Overfull \hbox (1.89514pt too wide) in paragraph at lines 183--185
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--185
+ \T2A/cmr/m/n/10 [Рис. 6] Интерполяция функции (1) 
+ []
+
+[7 <./F1_p5p7_Splain.png>]
+<F1_p33p65_Splain.png, id=51, 346.896pt x 260.172pt>
+File: F1_p33p65_Splain.png Graphic file (type png)
+<use F1_p33p65_Splain.png>
+Package pdftex.def Info: F1_p33p65_Splain.png  used on input line 186.
 (pdftex.def)             Requested size: 346.89514pt x 260.17134pt.
 
 Overfull \hbox (1.89514pt too wide) in paragraph at lines 186--188
@@ -645,14 +705,13 @@ Overfull \hbox (1.89514pt too wide) in paragraph at lines 186--188
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 186--188
- \T2A/cmr/m/n/10 [Рис. 5] Интерполяция функции (1) 
+ \T2A/cmr/m/n/10 [Рис. 7] Интерполяция функции (2) 
  []
 
-[6 <./F2_p11p17_Lagrange.png>]
-<F1_p11p17_Splain.png, id=45, 346.896pt x 260.172pt>
-File: F1_p11p17_Splain.png Graphic file (type png)
-<use F1_p11p17_Splain.png>
-Package pdftex.def Info: F1_p11p17_Splain.png  used on input line 189.
+<F2_p5p7_Splain.png, id=52, 346.896pt x 260.172pt>
+File: F2_p5p7_Splain.png Graphic file (type png)
+<use F2_p5p7_Splain.png>
+Package pdftex.def Info: F2_p5p7_Splain.png  used on input line 189.
 (pdftex.def)             Requested size: 346.89514pt x 260.17134pt.
 
 Overfull \hbox (1.89514pt too wide) in paragraph at lines 189--191
@@ -661,14 +720,14 @@ Overfull \hbox (1.89514pt too wide) in paragraph at lines 189--191
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 189--191
- \T2A/cmr/m/n/10 [Рис. 6] Интерполяция функции (1) 
+ \T2A/cmr/m/n/10 [Рис. 8] Интерполяция функции (2) 
  []
 
-[7 <./F1_p5p7_Splain.png>]
-<F2_p5p7_Splain.png, id=51, 346.896pt x 260.172pt>
-File: F2_p5p7_Splain.png Graphic file (type png)
-<use F2_p5p7_Splain.png>
-Package pdftex.def Info: F2_p5p7_Splain.png  used on input line 192.
+[8 <./F1_p11p17_Splain.png> <./F1_p33p65_Splain.png>]
+<F2_p11p17_Splain.png, id=58, 346.896pt x 260.172pt>
+File: F2_p11p17_Splain.png Graphic file (type png)
+<use F2_p11p17_Splain.png>
+Package pdftex.def Info: F2_p11p17_Splain.png  used on input line 192.
 (pdftex.def)             Requested size: 346.89514pt x 260.17134pt.
 
 Overfull \hbox (1.89514pt too wide) in paragraph at lines 192--194
@@ -677,13 +736,13 @@ Overfull \hbox (1.89514pt too wide) in paragraph at lines 192--194
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 192--194
- \T2A/cmr/m/n/10 [Рис. 7] Интерполяция функции (2) 
+ \T2A/cmr/m/n/10 [Рис. 9] Интерполяция функции (2) 
  []
 
-<F2_p11p17_Splain.png, id=52, 346.896pt x 260.172pt>
-File: F2_p11p17_Splain.png Graphic file (type png)
-<use F2_p11p17_Splain.png>
-Package pdftex.def Info: F2_p11p17_Splain.png  used on input line 195.
+<F2_p33p65_Splain.png, id=59, 346.896pt x 260.172pt>
+File: F2_p33p65_Splain.png Graphic file (type png)
+<use F2_p33p65_Splain.png>
+Package pdftex.def Info: F2_p33p65_Splain.png  used on input line 195.
 (pdftex.def)             Requested size: 346.89514pt x 260.17134pt.
 
 Overfull \hbox (1.89514pt too wide) in paragraph at lines 195--197
@@ -692,69 +751,67 @@ Overfull \hbox (1.89514pt too wide) in paragraph at lines 195--197
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 195--197
- \T2A/cmr/m/n/10 [Рис. 8] Интерполяция функции (2) 
+ \T2A/cmr/m/n/10 [Рис. 10] Интерполяция функции (2) 
  []
 
-[8 <./F1_p11p17_Splain.png> <./F2_p5p7_Splain.png>]
-Overfull \hbox (1.57pt too wide) in paragraph at lines 215--218
-\T2A/cmr/m/n/10 представлены интерполянты $\OML/cmm/m/it/10 F[]\OT1/cmr/m/n/10 
-(\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$\T2A/cmr/m/n/10 . В 3 строке представлена 
-функция $\OML/cmm/m/it/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )
- =
+[9 <./F2_p5p7_Splain.png> <./F2_p11p17_Splain.png>]
+Overfull \hbox (12.65251pt too wide) in paragraph at lines 217--220
+\T2A/cmr/m/n/10 В 1 строке представлены изначальные функции $\OML/cmm/m/it/10 f
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$\T2A/cmr/m/n/10 . В 2 ст
+роке представлены
  []
 
 
-Overfull \hbox (7.69165pt too wide) in paragraph at lines 222--225
+Overfull \hbox (7.69165pt too wide) in paragraph at lines 224--227
 \T2A/cmr/m/n/10 Метод интерполяции многочленами Лагранжа позволяет хорошо прибл
 ижать
  []
 
-[9 <./F2_p11p17_Splain.png>]
-Overfull \hbox (28.66241pt too wide) in paragraph at lines 226--227
+[10 <./F2_p33p65_Splain.png>]
+Overfull \hbox (28.66241pt too wide) in paragraph at lines 228--229
 []\T2A/cmr/m/n/10 Метод интерполяции сплайнами показывает себя лучше в задаче и
 нтерполяции
  []
 
 
-Overfull \hbox (4.51553pt too wide) in paragraph at lines 231--233
+Overfull \hbox (4.51553pt too wide) in paragraph at lines 233--235
 []\T2A/cmr/m/n/10 Код хранится в репозитории: https://github.com/GoodDay-lab/pr
 acticum-
  []
 
 
-Overfull \hbox (16.93939pt too wide) in paragraph at lines 235--236
+Overfull \hbox (16.93939pt too wide) in paragraph at lines 237--238
 \T2A/cmr/m/n/10 Таким образом, в ходе выполнения задания был реализован метод п
 риближения
  []
 
 
-Overfull \hbox (10.51505pt too wide) in paragraph at lines 235--236
-\T2A/cmr/m/n/10 полиномами Лагранжа и сплайнами. Было отмечено и теоретически д
-оказано,
+Overfull \hbox (26.0668pt too wide) in paragraph at lines 237--238
+\T2A/cmr/m/n/10 полиномами Лагранжа и кубическими сплайнами. Было отмечено и те
+оретически
  []
 
 
-Overfull \hbox (11.55867pt too wide) in paragraph at lines 235--236
-\T2A/cmr/m/n/10 что полиномы Лагранжа могут эффективно приближать функции $\OML
-/cmm/m/it/10 f \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 [\OML/cmm
-/m/it/10 a; b\OT1/cmr/m/n/10 ]$\T2A/cmr/m/n/10 ,
+Overfull \hbox (1.52649pt too wide) in paragraph at lines 237--238
+\T2A/cmr/m/n/10 доказано, что полиномы Лагранжа могут эффективно приближать фун
+кции
  []
 
 
-Overfull \hbox (33.71921pt too wide) in paragraph at lines 241--242
+Overfull \hbox (33.71921pt too wide) in paragraph at lines 243--244
 []\T2A/cmr/m/n/10 (url: https://education.yandex.ru/handbook/ml/article/mashinn
 oye-obucheniye) 
  []
 
-[10] (./report.aux) ) 
+[11] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 4909 strings out of 477459
- 80905 string characters out of 5830925
+ 4923 strings out of 477459
+ 81247 string characters out of 5830925
  1862388 words of memory out of 6000000
- 25042 multiletter control sequences out of 15000+600000
+ 25054 multiletter control sequences out of 15000+600000
  522689 words of font info for 54 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 62i,9n,67p,1002b,313s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 62i,9n,67p,1027b,313s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 mi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pf
@@ -769,10 +826,10 @@ ic/cm-super/sfrm1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-s
 uper/sfrm1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sf
 rm1728.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfti1000.
 pfb>
-Output written on report.pdf (10 pages, 574852 bytes).
+Output written on report.pdf (11 pages, 658600 bytes).
 PDF statistics:
- 125 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
+ 132 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
